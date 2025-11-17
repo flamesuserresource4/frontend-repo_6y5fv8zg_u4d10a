@@ -15,7 +15,8 @@ export default function Navbar() {
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-black/70">
           <a className="hover:text-black transition" href="#services">Services</a>
-          <a className="hover:text-black transition" href="#gallery">Gallery</a>
+          {/* Gallery removed per request */}
+          {/* <a className="hover:text-black transition" href="#gallery">Gallery</a> */}
           <a className="hover:text-black transition" href="#about">About</a>
           <a className="hover:text-black transition" href="#contact">Contact</a>
         </nav>
@@ -24,9 +25,9 @@ export default function Navbar() {
             <Phone size={16} />
             <span className="text-sm font-medium">020 4122 1600</span>
           </a>
-          <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white hover:opacity-90 transition">
+          <a href="mailto:jessie@grandifloragardenservices.co.nz" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white hover:opacity-90 transition">
             <Mail size={16} />
-            <span className="text-sm font-medium">Get a Quote</span>
+            <span className="text-sm font-medium">Email Jessie</span>
           </a>
         </div>
       </div>

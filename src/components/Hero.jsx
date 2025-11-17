@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -13,11 +13,11 @@ export default function Hero() {
             Meticulous hedges, healthy lawns, and immaculate gardens handled with prompt, friendly service. Over 5 years maintaining 800+ gardens across the region.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-black text-white hover:opacity-90 transition font-medium">
-              Get a Fast Quote <ArrowRight size={18} />
+            <a href="mailto:jessie@grandifloragardenservices.co.nz" className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-black text-white hover:opacity-90 transition font-medium">
+              <Mail size={18} /> Email Jessie
             </a>
-            <a href="#services" className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-black/10 hover:border-black/30 transition font-medium">
-              Our Services
+            <a href="tel:02041221600" className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-black/10 hover:border-black/30 transition font-medium">
+              <Phone size={18} /> 020 4122 1600
             </a>
           </div>
           <div className="mt-8 flex items-center gap-6 text-sm text-black/70">
@@ -38,20 +38,17 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-black/10 shadow-sm">
-            <img
-              src="https://images.unsplash.com/photo-1599916953768-92ef1295bd02?q=80&w=1600&auto=format&fit=crop"
-              alt="Hedge trimming"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden md:block">
-            <div className="rounded-xl border border-black/10 bg-white p-4 shadow-sm">
-              <img
-                src="https://images.unsplash.com/photo-1592150621744-aca64f551e7b?q=80&w=800&auto=format&fit=crop"
-                alt="Garden maintenance"
-                className="h-28 w-44 object-cover rounded-lg"
-              />
+          {/* Intentionally left without imagery to keep a clean, monochrome focus on contact actions */}
+          <div className="rounded-2xl border border-black/10 p-8">
+            <p className="text-xl font-medium">Ready when you are.</p>
+            <p className="mt-2 text-black/70">Email or call to schedule hedge trimming or regular garden care.</p>
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <a href="mailto:jessie@grandifloragardenservices.co.nz" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white hover:opacity-90 transition text-sm font-medium">
+                <Mail size={16} /> Email Jessie
+              </a>
+              <a href="tel:02041221600" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/10 hover:border-black/30 transition text-sm font-medium">
+                <Phone size={16} /> 020 4122 1600
+              </a>
             </div>
           </div>
         </div>
