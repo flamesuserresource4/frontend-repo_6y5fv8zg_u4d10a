@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import IntroHeading from './components/IntroHeading'
 import About from './components/About'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="bg-white text-black">
       <Navbar />
+      <IntroHeading />
       <About />
       <Hero />
       <Services />
